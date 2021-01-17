@@ -1,0 +1,86 @@
+.trips {
+    &__inner {
+        margin-top: 131px;
+        position: relative;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__card-group {
+        margin-top: 46px;
+    }
+}
+
+.locations {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 200px;
+    grid-template-rows: 354px 283px;
+    gap: 10px;
+
+    &__item {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: span 2;
+        &-1 {
+            grid-column: span 3;
+            background: linear-gradient(
+                    rgba(21, 24, 36, 0.4),
+                    rgba(21, 24, 36, 0.4)
+                ),
+                url(../images/fuji.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        &-2 {
+            grid-column: span 3;
+            background: linear-gradient(
+                    rgba(21, 24, 36, 0.4),
+                    rgba(21, 24, 36, 0.4)
+                ),
+                url(../images/kyoto.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        &-3 {
+            background: linear-gradient(
+                    rgba(21, 24, 36, 0.4),
+                    rgba(21, 24, 36, 0.4)
+                ),
+                url(../images/tokyo.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        &-4 {
+            background: linear-gradient(
+                    rgba(21, 24, 36, 0.4),
+                    rgba(21, 24, 36, 0.4)
+                ),
+                url(../images/niigata.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        &-5 {
+            background: linear-gradient(
+                    rgba(21, 24, 36, 0.4),
+                    rgba(21, 24, 36, 0.4)
+                ),
+                url(../images/sapporo.jpg) center center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        bottom: 27px;
+        left: 29px;
+        font-weight: bold;
+        font-size: 3.125rem;
+        line-height: 3.75rem;
+        /* identical to box height */
+
+        color: #ffffff;
+    }
+}

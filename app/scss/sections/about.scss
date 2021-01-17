@@ -1,0 +1,46 @@
+.about {
+    &__inner {
+        margin-top: 131px;
+    }
+
+    &__item {
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+        }
+        & + .about__item {
+            margin-top: 77px;
+        }
+    }
+}
+
+.about-card {
+    display: flex;
+    justify-content: space-around;
+    height: 354px;
+    &__img {
+        display: block;
+        width: 597px;
+        height: 100%;
+    }
+    &__info {
+        max-width: 612px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0 46px;
+    }
+
+    &__title {
+        max-width: 370px;
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+        color: $darkBlue;
+    }
+
+    &__desc {
+        max-width: 520px;
+        color: $darkBlue;
+    }
+}

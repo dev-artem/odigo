@@ -1,0 +1,102 @@
+.header {
+    min-height: 962px;
+    color: $white;
+
+    background: linear-gradient(
+            180deg,
+            rgba(53, 66, 103, 0.0001) 0%,
+            #151824 95.04%
+        ),
+        url(../images/bg_header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    &__inner {
+        padding-top: 56px;
+        margin-left: 111px;
+        margin-right: 87px;
+        padding-bottom: 370px;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        display: inline-block;
+        & + .header__link {
+            margin-left: 82px;
+        }
+        a {
+            color: $white;
+
+            font-size: 1.125rem;
+        }
+    }
+
+    &__title {
+        margin-top: 176px;
+        max-width: 620px;
+        font-size: 3.125rem;
+        font-weight: 500;
+        line-height: 3.75rem;
+    }
+
+    &__desc {
+        margin-top: 22px;
+        margin-bottom: 59px;
+        max-width: 546px;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-right: 60px;
+    }
+    &__label {
+        order: 1;
+        padding-left: 44px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            left: 0;
+        }
+    }
+    &__input {
+        order: 2;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #bfc0c5;
+        color: #fff;
+        margin-top: 5px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__btn {
+        padding: 15px 40px;
+
+        font-size: 1.5rem;
+        line-height: 1.81rem;
+        background-color: #1b7dff;
+        color: $white;
+        border: none;
+        cursor: pointer;
+    }
+}

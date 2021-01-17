@@ -1,0 +1,35 @@
+.footer {
+    height: 370px;
+    background-color: $footerBg;
+    &__inner {
+        padding: 119px 87px 119px 94px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 170px;
+        height: 64px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        width: 560px;
+    }
+
+    &__title {
+        font-size: 1.125rem;
+        color: #fff;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        height: 133px;
+        justify-content: space-between;
+    }
+    &__link:hover {
+        a {
+            color: $lightBlue;
+            transition: all 0.3s ease;
+        }
+    }
+}

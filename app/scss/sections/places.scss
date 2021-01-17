@@ -1,0 +1,75 @@
+.places {
+    &__inner {
+        padding-top: 139px;
+    }
+    &__card-group {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card {
+        margin-bottom: 58px;
+    }
+}
+
+.district-card {
+    width: 392px;
+    height: 567px;
+    &__img {
+        position: relative;
+        width: 389px;
+        height: 377px;
+        overflow: hidden;
+        background: url(../images/nagoya.jpg) center center/cover no-repeat;
+        &:hover {
+            .district-card__stats {
+                transition: all 0.4s ease;
+                bottom: 0;
+            }
+        }
+    }
+    &__stats {
+        position: absolute;
+        left: 0;
+        bottom: -55px;
+    }
+
+    &__desc {
+        margin-top: 45px;
+        margin-bottom: 31px;
+        color: $darkBlue;
+    }
+
+    &__btn {
+        padding: 11px 19px;
+        background-color: $lightBlue;
+        color: #fff;
+    }
+}
+
+.stats {
+    display: flex;
+    height: 55px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    background-color: #000000;
+    color: #fff;
+    &__likes {
+        color: #fff;
+        &:after {
+            font-family: 'IcoFont';
+            content: '\ef45';
+        }
+    }
+    &__comments {
+        color: #fff;
+
+        &:after {
+            font-family: 'IcoFont';
+            content: '\ec86';
+        }
+    }
+}
